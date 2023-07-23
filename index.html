@@ -11,9 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    
+
     <!-- font awesome icons  -->
-    <script src="https://kit.fontawesome.com/5cb82b043a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5cb82b043a.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- daisyui  -->
     <link
@@ -24,6 +27,340 @@
 
     <!-- tailwind css  -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body{
+            font-family: poppins;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'common-color':'#E76F51'
+              }
+            }
+          }
+        }
+      </script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar bg-base-100 flex justify-between lg:justify-center">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Shop</a>
+                </li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li>
+                <a>Shop</a>
+              </li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <a><button class="btn btn-success bg-common-color text-white">Login</button></a>
+          </div>
+        </div>
+      </nav>
+      <!-- hero section  -->
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full bg-[#e76f5138]">
+            <div class="hero min-h-screen">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img src="/images/slider/bike1.png" class="max-w-sm rounded-lg" />
+                  <div class="px-20">
+                    <h1 class="text-5xl font-bold">Box Office News!</h1>
+                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+            <div class="hero min-h-screen bg-base-200">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img src="/images/slider/bike2.png" class="max-w-sm rounded-lg" />
+                  <div class="px-10">
+                    <h1 class="text-5xl font-bold">Box Office News!</h1>
+                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+            <div class="hero min-h-screen bg-base-200">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img src="/images/slider/bike3.png" class="max-w-sm rounded-lg" />
+                  <div class="px-10">
+                    <h1 class="text-5xl font-bold">Box Office News!</h1>
+                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+            <div class="hero min-h-screen bg-base-200">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img src="/images/slider/bike4.png" class="max-w-sm rounded-lg" />
+                  <div class="px-10">
+                    <h1 class="text-5xl font-bold">Box Office News!</h1>
+                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+        <!-- featured section  -->
+        <section class="text-center">
+            <h1 class="text-5xl font-semibold mt-28">Fetured Bikes In This Year</h1>
+            <p class="text-[#E76F51] font-semibold border-b-2 border-[#E76F51] border-solid mb-3 inline-block">Best bike collection</p>
+            <div class="flex items-center flex-col lg:flex-row lg:justify-evenly">
+                <img src="./images/slider/bike1.png" alt="">
+                <img src="./images/slider/bike2.png" alt="">
+                <img src="./images/slider/bike3.png" alt="">
+            </div>
+        </section>
+        <!-- latest news section  -->
+        <section>
+            <h1 class="font-semibold text-5xl my-20 text-center">latest News</h1>
+            <div class="flex justify-center flex-col lg:flex-row">
+                <!-- card - 1  -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/images/others/latest1.png" alt="Bikes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                      <div class="card-actions">
+                        <button class="btn btn-[#E76F51] bg-[#E76F51] hover:bg-[#aa533d] text-white">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- card - 2  -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/images/others/latest2.png" alt="Bikes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                      <div class="card-actions">
+                        <button class="btn btn-[#E76F51] bg-[#E76F51] hover:bg-[#aa533d] text-white">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- card - 3  -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/images/others/latest3.png" alt="Bikes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                      <div class="card-actions">
+                        <button class="btn btn-[#E76F51] bg-[#E76F51] hover:bg-[#aa533d] text-white">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <!-- happy clients section  -->
+        <section class="text-center">
+            <h1 class="text-5xl font-semibold my-20">Happy <span class="text-[#E76F51]">Clients says</span></h1>
+            <div class="flex gap-11 items-center lg:justify-center lg:flex-row flex-col">
+                <!-- user-1  -->
+                <div class="card bg-base-100 shadow-xl border-solid border-[#DEDEDE] border-2 p-9">
+                    <figure><img class="w-[100%]" src="/images/others/user-1.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <p class="text-[#6C6C6C]">Slate helps you see how  many more days you need  to work to read your financial goal for the month and year.</p>
+                      <div class="rating flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                            <path d="M21.1223 8.41927C21.0646 8.24946 20.9585 8.10025 20.817 7.99006C20.6755 7.87987 20.5049 7.81353 20.3261 7.79922L15.097 7.38371L12.8341 2.3747C12.7621 2.21337 12.6449 2.07634 12.4966 1.98016C12.3484 1.88397 12.1755 1.83274 11.9988 1.83264C11.8221 1.83254 11.6492 1.88359 11.5009 1.97961C11.3525 2.07563 11.2352 2.21253 11.1629 2.37378L8.90012 7.38371L3.67097 7.79922C3.49528 7.81314 3.32732 7.87738 3.18718 7.98425C3.04704 8.09113 2.94066 8.23612 2.88077 8.40187C2.82087 8.56762 2.81 8.74712 2.84944 8.91889C2.88889 9.09066 2.97699 9.24743 3.1032 9.37044L6.96751 13.1375L5.60083 19.0555C5.55933 19.2347 5.57263 19.4221 5.639 19.5936C5.70538 19.7651 5.82176 19.9127 5.97304 20.0172C6.12433 20.1217 6.30354 20.1783 6.48741 20.1797C6.67129 20.1811 6.85134 20.1272 7.0042 20.025L11.9985 16.6955L16.9929 20.025C17.1491 20.1288 17.3334 20.1822 17.5209 20.1781C17.7084 20.1739 17.8901 20.1125 18.0416 20.002C18.1932 19.8916 18.3073 19.7373 18.3685 19.5601C18.4298 19.3828 18.4353 19.1911 18.3843 19.0106L16.7067 13.1403L20.8673 9.39612C21.1397 9.15031 21.2397 8.7669 21.1223 8.41927Z" fill="#E77C40"/>
+                          </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                            <path d="M21.1223 8.41927C21.0646 8.24946 20.9585 8.10025 20.817 7.99006C20.6755 7.87987 20.5049 7.81353 20.3261 7.79922L15.097 7.38371L12.8341 2.3747C12.7621 2.21337 12.6449 2.07634 12.4966 1.98016C12.3484 1.88397 12.1755 1.83274 11.9988 1.83264C11.8221 1.83254 11.6492 1.88359 11.5009 1.97961C11.3525 2.07563 11.2352 2.21253 11.1629 2.37378L8.90012 7.38371L3.67097 7.79922C3.49528 7.81314 3.32732 7.87738 3.18718 7.98425C3.04704 8.09113 2.94066 8.23612 2.88077 8.40187C2.82087 8.56762 2.81 8.74712 2.84944 8.91889C2.88889 9.09066 2.97699 9.24743 3.1032 9.37044L6.96751 13.1375L5.60083 19.0555C5.55933 19.2347 5.57263 19.4221 5.639 19.5936C5.70538 19.7651 5.82176 19.9127 5.97304 20.0172C6.12433 20.1217 6.30354 20.1783 6.48741 20.1797C6.67129 20.1811 6.85134 20.1272 7.0042 20.025L11.9985 16.6955L16.9929 20.025C17.1491 20.1288 17.3334 20.1822 17.5209 20.1781C17.7084 20.1739 17.8901 20.1125 18.0416 20.002C18.1932 19.8916 18.3073 19.7373 18.3685 19.5601C18.4298 19.3828 18.4353 19.1911 18.3843 19.0106L16.7067 13.1403L20.8673 9.39612C21.1397 9.15031 21.2397 8.7669 21.1223 8.41927Z" fill="#E77C40"/>
+                          </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                            <path d="M21.1223 8.41927C21.0646 8.24946 20.9585 8.10025 20.817 7.99006C20.6755 7.87987 20.5049 7.81353 20.3261 7.79922L15.097 7.38371L12.8341 2.3747C12.7621 2.21337 12.6449 2.07634 12.4966 1.98016C12.3484 1.88397 12.1755 1.83274 11.9988 1.83264C11.8221 1.83254 11.6492 1.88359 11.5009 1.97961C11.3525 2.07563 11.2352 2.21253 11.1629 2.37378L8.90012 7.38371L3.67097 7.79922C3.49528 7.81314 3.32732 7.87738 3.18718 7.98425C3.04704 8.09113 2.94066 8.23612 2.88077 8.40187C2.82087 8.56762 2.81 8.74712 2.84944 8.91889C2.88889 9.09066 2.97699 9.24743 3.1032 9.37044L6.96751 13.1375L5.60083 19.0555C5.55933 19.2347 5.57263 19.4221 5.639 19.5936C5.70538 19.7651 5.82176 19.9127 5.97304 20.0172C6.12433 20.1217 6.30354 20.1783 6.48741 20.1797C6.67129 20.1811 6.85134 20.1272 7.0042 20.025L11.9985 16.6955L16.9929 20.025C17.1491 20.1288 17.3334 20.1822 17.5209 20.1781C17.7084 20.1739 17.8901 20.1125 18.0416 20.002C18.1932 19.8916 18.3073 19.7373 18.3685 19.5601C18.4298 19.3828 18.4353 19.1911 18.3843 19.0106L16.7067 13.1403L20.8673 9.39612C21.1397 9.15031 21.2397 8.7669 21.1223 8.41927Z" fill="#E77C40"/>
+                          </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                            <path d="M21.1223 8.41927C21.0646 8.24946 20.9585 8.10025 20.817 7.99006C20.6755 7.87987 20.5049 7.81353 20.3261 7.79922L15.097 7.38371L12.8341 2.3747C12.7621 2.21337 12.6449 2.07634 12.4966 1.98016C12.3484 1.88397 12.1755 1.83274 11.9988 1.83264C11.8221 1.83254 11.6492 1.88359 11.5009 1.97961C11.3525 2.07563 11.2352 2.21253 11.1629 2.37378L8.90012 7.38371L3.67097 7.79922C3.49528 7.81314 3.32732 7.87738 3.18718 7.98425C3.04704 8.09113 2.94066 8.23612 2.88077 8.40187C2.82087 8.56762 2.81 8.74712 2.84944 8.91889C2.88889 9.09066 2.97699 9.24743 3.1032 9.37044L6.96751 13.1375L5.60083 19.0555C5.55933 19.2347 5.57263 19.4221 5.639 19.5936C5.70538 19.7651 5.82176 19.9127 5.97304 20.0172C6.12433 20.1217 6.30354 20.1783 6.48741 20.1797C6.67129 20.1811 6.85134 20.1272 7.0042 20.025L11.9985 16.6955L16.9929 20.025C17.1491 20.1288 17.3334 20.1822 17.5209 20.1781C17.7084 20.1739 17.8901 20.1125 18.0416 20.002C18.1932 19.8916 18.3073 19.7373 18.3685 19.5601C18.4298 19.3828 18.4353 19.1911 18.3843 19.0106L16.7067 13.1403L20.8673 9.39612C21.1397 9.15031 21.2397 8.7669 21.1223 8.41927Z" fill="#E77C40"/>
+                          </svg> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                            <path d="M5.99772 13.1376L4.63104 19.0556C4.58872 19.2348 4.60143 19.4226 4.6675 19.5945C4.73357 19.7663 4.84993 19.9143 5.00139 20.019C5.15286 20.1237 5.33237 20.1803 5.5165 20.1814C5.70062 20.1825 5.8808 20.128 6.03349 20.0251L11.0278 16.6956L16.0222 20.0251C16.1784 20.1289 16.3627 20.1823 16.5502 20.1781C16.7377 20.174 16.9194 20.1126 17.0709 20.0021C17.2225 19.8916 17.3365 19.7374 17.3978 19.5602C17.4591 19.3829 17.4646 19.1911 17.4136 19.0107L15.736 13.1404L19.8966 9.39622C20.0298 9.27623 20.125 9.11982 20.1703 8.94632C20.2156 8.77283 20.209 8.58986 20.1515 8.42004C20.0939 8.25023 19.9878 8.10101 19.8463 7.99085C19.7048 7.88069 19.5342 7.81442 19.3554 7.80023L14.1263 7.3838L11.8634 2.37479C11.7913 2.2135 11.674 2.07654 11.5257 1.98043C11.3774 1.88433 11.2045 1.83319 11.0278 1.83319C10.8511 1.83319 10.6782 1.88433 10.53 1.98043C10.3817 2.07654 10.2644 2.2135 10.1922 2.37479L7.92942 7.3838L2.70027 7.79931C2.52457 7.81323 2.35661 7.87747 2.21647 7.98434C2.07634 8.09122 1.96996 8.23621 1.91006 8.40196C1.85017 8.56771 1.83929 8.74721 1.87874 8.91898C1.91819 9.09075 2.00629 9.24752 2.1325 9.37053L5.99772 13.1376ZM8.61459 9.16966C8.77831 9.15676 8.93555 9.10005 9.06982 9.00549C9.20409 8.91092 9.31044 8.78197 9.37773 8.63216L11.0278 4.98065L12.6779 8.63216C12.7452 8.78197 12.8516 8.91092 12.9859 9.00549C13.1201 9.10005 13.2774 9.15676 13.4411 9.16966L17.0843 9.45859L14.0841 12.1589C13.8236 12.3937 13.7199 12.7551 13.8153 13.0927L14.9646 17.1147L11.5378 14.8299C11.3874 14.729 11.2104 14.6751 11.0292 14.6751C10.8481 14.6751 10.671 14.729 10.5206 14.8299L6.93972 17.2175L7.90282 13.0477C7.93813 12.8944 7.93339 12.7345 7.88906 12.5835C7.84472 12.4325 7.76228 12.2954 7.64966 12.1855L4.8631 9.46868L8.61459 9.16966Z" fill="#E77C40"/>
+                          </svg>
+                      </div>
+                    </div>
+                    <p class="text-[#23A6F0]">Regina Miles</p>
+                    <p class="text-[#252B42] font-semibold">Banker</p>
+                </div>
+                  <!-- user-2  -->
+                <div class="card  bg-base-100 shadow-xl border-solid border-[#DEDEDE] border-2 p-9">
+                    <figure><img src="/images/others/user-2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <p class="text-[#6C6C6C]">Slate helps you see how  many more days you need  to work to read your financial goal for the month and year.</p>
+                      <div class="rating flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                            <path d="M21.1223 8.41927C21.0646 8.24946 20.9585 8.10025 20.817 7.99006C20.6755 7.87987 20.5049 7.81353 20.3261 7.79922L15.097 7.38371L12.8341 2.3747C12.7621 2.21337 12.6449 2.07634 12.4966 1.98016C12.3484 1.88397 12.1755 1.83274 11.9988 1.83264C11.8221 1.83254 11.6492 1.88359 11.5009 1.97961C11.3525 2.07563 11.2352 2.21253 11.1629 2.37378L8.90012 7.38371L3.67097 7.79922C3.49528 7.81314 3.32732 7.87738 3.18718 7.98425C3.04704 8.09113 2.94066 8.23612 2.88077 8.40187C2.82087 8.56762 2.81 8.74712 2.84944 8.91889C2.88889 9.09066 2.97699 9.24743 3.1032 9.37044L6.96751 13.1375L5.60083 19.0555C5.55933 19.2347 5.57263 19.4221 5.639 19.5936C5.70538 19.7651 5.82176 19.9127 5.97304 20.0172C6.12433 20.1217 6.30354 20.1783 6.48741 20.1797C6.67129 20.1811 6.85134 20.1272 7.0042 20.025L11.9985 16.6955L16.9929 20.025C17.1491 20.1288 17.3334 20.1822 17.5209 20.1781C17.7084 20.1739 17.8901 20.1125 18.0416 20.002C18.1932 19.8916 18.3073 19.7373 18.3685 19.5601C18.4298 19.3828 18.4353 19.1911 18.3843 19.0106L16.7067 13.1403L20.8673 9.39612C21.1397 9.15031 21.2397 8.7669 21.1223 8.41927Z" fill="#E77C40"/>
+                          </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                            <path d="M21.1223 8.41927C21.0646 8.24946 20.9585 8.10025 20.817 7.99006C20.6755 7.87987 20.5049 7.81353 20.3261 7.79922L15.097 7.38371L12.8341 2.3747C12.7621 2.21337 12.6449 2.07634 12.4966 1.98016C12.3484 1.88397 12.1755 1.83274 11.9988 1.83264C11.8221 1.83254 11.6492 1.88359 11.5009 1.97961C11.3525 2.07563 11.2352 2.21253 11.1629 2.37378L8.90012 7.38371L3.67097 7.79922C3.49528 7.81314 3.32732 7.87738 3.18718 7.98425C3.04704 8.09113 2.94066 8.23612 2.88077 8.40187C2.82087 8.56762 2.81 8.74712 2.84944 8.91889C2.88889 9.09066 2.97699 9.24743 3.1032 9.37044L6.96751 13.1375L5.60083 19.0555C5.55933 19.2347 5.57263 19.4221 5.639 19.5936C5.70538 19.7651 5.82176 19.9127 5.97304 20.0172C6.12433 20.1217 6.30354 20.1783 6.48741 20.1797C6.67129 20.1811 6.85134 20.1272 7.0042 20.025L11.9985 16.6955L16.9929 20.025C17.1491 20.1288 17.3334 20.1822 17.5209 20.1781C17.7084 20.1739 17.8901 20.1125 18.0416 20.002C18.1932 19.8916 18.3073 19.7373 18.3685 19.5601C18.4298 19.3828 18.4353 19.1911 18.3843 19.0106L16.7067 13.1403L20.8673 9.39612C21.1397 9.15031 21.2397 8.7669 21.1223 8.41927Z" fill="#E77C40"/>
+                          </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                            <path d="M21.1223 8.41927C21.0646 8.24946 20.9585 8.10025 20.817 7.99006C20.6755 7.87987 20.5049 7.81353 20.3261 7.79922L15.097 7.38371L12.8341 2.3747C12.7621 2.21337 12.6449 2.07634 12.4966 1.98016C12.3484 1.88397 12.1755 1.83274 11.9988 1.83264C11.8221 1.83254 11.6492 1.88359 11.5009 1.97961C11.3525 2.07563 11.2352 2.21253 11.1629 2.37378L8.90012 7.38371L3.67097 7.79922C3.49528 7.81314 3.32732 7.87738 3.18718 7.98425C3.04704 8.09113 2.94066 8.23612 2.88077 8.40187C2.82087 8.56762 2.81 8.74712 2.84944 8.91889C2.88889 9.09066 2.97699 9.24743 3.1032 9.37044L6.96751 13.1375L5.60083 19.0555C5.55933 19.2347 5.57263 19.4221 5.639 19.5936C5.70538 19.7651 5.82176 19.9127 5.97304 20.0172C6.12433 20.1217 6.30354 20.1783 6.48741 20.1797C6.67129 20.1811 6.85134 20.1272 7.0042 20.025L11.9985 16.6955L16.9929 20.025C17.1491 20.1288 17.3334 20.1822 17.5209 20.1781C17.7084 20.1739 17.8901 20.1125 18.0416 20.002C18.1932 19.8916 18.3073 19.7373 18.3685 19.5601C18.4298 19.3828 18.4353 19.1911 18.3843 19.0106L16.7067 13.1403L20.8673 9.39612C21.1397 9.15031 21.2397 8.7669 21.1223 8.41927Z" fill="#E77C40"/>
+                          </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                            <path d="M21.1223 8.41927C21.0646 8.24946 20.9585 8.10025 20.817 7.99006C20.6755 7.87987 20.5049 7.81353 20.3261 7.79922L15.097 7.38371L12.8341 2.3747C12.7621 2.21337 12.6449 2.07634 12.4966 1.98016C12.3484 1.88397 12.1755 1.83274 11.9988 1.83264C11.8221 1.83254 11.6492 1.88359 11.5009 1.97961C11.3525 2.07563 11.2352 2.21253 11.1629 2.37378L8.90012 7.38371L3.67097 7.79922C3.49528 7.81314 3.32732 7.87738 3.18718 7.98425C3.04704 8.09113 2.94066 8.23612 2.88077 8.40187C2.82087 8.56762 2.81 8.74712 2.84944 8.91889C2.88889 9.09066 2.97699 9.24743 3.1032 9.37044L6.96751 13.1375L5.60083 19.0555C5.55933 19.2347 5.57263 19.4221 5.639 19.5936C5.70538 19.7651 5.82176 19.9127 5.97304 20.0172C6.12433 20.1217 6.30354 20.1783 6.48741 20.1797C6.67129 20.1811 6.85134 20.1272 7.0042 20.025L11.9985 16.6955L16.9929 20.025C17.1491 20.1288 17.3334 20.1822 17.5209 20.1781C17.7084 20.1739 17.8901 20.1125 18.0416 20.002C18.1932 19.8916 18.3073 19.7373 18.3685 19.5601C18.4298 19.3828 18.4353 19.1911 18.3843 19.0106L16.7067 13.1403L20.8673 9.39612C21.1397 9.15031 21.2397 8.7669 21.1223 8.41927Z" fill="#E77C40"/>
+                          </svg> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                            <path d="M5.99772 13.1376L4.63104 19.0556C4.58872 19.2348 4.60143 19.4226 4.6675 19.5945C4.73357 19.7663 4.84993 19.9143 5.00139 20.019C5.15286 20.1237 5.33237 20.1803 5.5165 20.1814C5.70062 20.1825 5.8808 20.128 6.03349 20.0251L11.0278 16.6956L16.0222 20.0251C16.1784 20.1289 16.3627 20.1823 16.5502 20.1781C16.7377 20.174 16.9194 20.1126 17.0709 20.0021C17.2225 19.8916 17.3365 19.7374 17.3978 19.5602C17.4591 19.3829 17.4646 19.1911 17.4136 19.0107L15.736 13.1404L19.8966 9.39622C20.0298 9.27623 20.125 9.11982 20.1703 8.94632C20.2156 8.77283 20.209 8.58986 20.1515 8.42004C20.0939 8.25023 19.9878 8.10101 19.8463 7.99085C19.7048 7.88069 19.5342 7.81442 19.3554 7.80023L14.1263 7.3838L11.8634 2.37479C11.7913 2.2135 11.674 2.07654 11.5257 1.98043C11.3774 1.88433 11.2045 1.83319 11.0278 1.83319C10.8511 1.83319 10.6782 1.88433 10.53 1.98043C10.3817 2.07654 10.2644 2.2135 10.1922 2.37479L7.92942 7.3838L2.70027 7.79931C2.52457 7.81323 2.35661 7.87747 2.21647 7.98434C2.07634 8.09122 1.96996 8.23621 1.91006 8.40196C1.85017 8.56771 1.83929 8.74721 1.87874 8.91898C1.91819 9.09075 2.00629 9.24752 2.1325 9.37053L5.99772 13.1376ZM8.61459 9.16966C8.77831 9.15676 8.93555 9.10005 9.06982 9.00549C9.20409 8.91092 9.31044 8.78197 9.37773 8.63216L11.0278 4.98065L12.6779 8.63216C12.7452 8.78197 12.8516 8.91092 12.9859 9.00549C13.1201 9.10005 13.2774 9.15676 13.4411 9.16966L17.0843 9.45859L14.0841 12.1589C13.8236 12.3937 13.7199 12.7551 13.8153 13.0927L14.9646 17.1147L11.5378 14.8299C11.3874 14.729 11.2104 14.6751 11.0292 14.6751C10.8481 14.6751 10.671 14.729 10.5206 14.8299L6.93972 17.2175L7.90282 13.0477C7.93813 12.8944 7.93339 12.7345 7.88906 12.5835C7.84472 12.4325 7.76228 12.2954 7.64966 12.1855L4.8631 9.46868L8.61459 9.16966Z" fill="#E77C40"/>
+                          </svg>
+                      </div>
+                    </div>
+                    <p class="text-[#23A6F0]">Regina Miles</p>
+                    <p class="text-[#252B42] font-semibold">Banker</p>
+                </div>
+                  <!-- user-3  -->
+                <div class="card bg-base-100 shadow-xl border-solid border-[#DEDEDE] border-2 p-9">
+                    <figure><img src="/images/others/user-3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <p class="text-[#6C6C6C]">Slate helps you see how  many more days you need  to work to read your financial goal for the month and year.</p>
+                      <div class="rating flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                            <path d="M21.1223 8.41927C21.0646 8.24946 20.9585 8.10025 20.817 7.99006C20.6755 7.87987 20.5049 7.81353 20.3261 7.79922L15.097 7.38371L12.8341 2.3747C12.7621 2.21337 12.6449 2.07634 12.4966 1.98016C12.3484 1.88397 12.1755 1.83274 11.9988 1.83264C11.8221 1.83254 11.6492 1.88359 11.5009 1.97961C11.3525 2.07563 11.2352 2.21253 11.1629 2.37378L8.90012 7.38371L3.67097 7.79922C3.49528 7.81314 3.32732 7.87738 3.18718 7.98425C3.04704 8.09113 2.94066 8.23612 2.88077 8.40187C2.82087 8.56762 2.81 8.74712 2.84944 8.91889C2.88889 9.09066 2.97699 9.24743 3.1032 9.37044L6.96751 13.1375L5.60083 19.0555C5.55933 19.2347 5.57263 19.4221 5.639 19.5936C5.70538 19.7651 5.82176 19.9127 5.97304 20.0172C6.12433 20.1217 6.30354 20.1783 6.48741 20.1797C6.67129 20.1811 6.85134 20.1272 7.0042 20.025L11.9985 16.6955L16.9929 20.025C17.1491 20.1288 17.3334 20.1822 17.5209 20.1781C17.7084 20.1739 17.8901 20.1125 18.0416 20.002C18.1932 19.8916 18.3073 19.7373 18.3685 19.5601C18.4298 19.3828 18.4353 19.1911 18.3843 19.0106L16.7067 13.1403L20.8673 9.39612C21.1397 9.15031 21.2397 8.7669 21.1223 8.41927Z" fill="#E77C40"/>
+                          </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                            <path d="M21.1223 8.41927C21.0646 8.24946 20.9585 8.10025 20.817 7.99006C20.6755 7.87987 20.5049 7.81353 20.3261 7.79922L15.097 7.38371L12.8341 2.3747C12.7621 2.21337 12.6449 2.07634 12.4966 1.98016C12.3484 1.88397 12.1755 1.83274 11.9988 1.83264C11.8221 1.83254 11.6492 1.88359 11.5009 1.97961C11.3525 2.07563 11.2352 2.21253 11.1629 2.37378L8.90012 7.38371L3.67097 7.79922C3.49528 7.81314 3.32732 7.87738 3.18718 7.98425C3.04704 8.09113 2.94066 8.23612 2.88077 8.40187C2.82087 8.56762 2.81 8.74712 2.84944 8.91889C2.88889 9.09066 2.97699 9.24743 3.1032 9.37044L6.96751 13.1375L5.60083 19.0555C5.55933 19.2347 5.57263 19.4221 5.639 19.5936C5.70538 19.7651 5.82176 19.9127 5.97304 20.0172C6.12433 20.1217 6.30354 20.1783 6.48741 20.1797C6.67129 20.1811 6.85134 20.1272 7.0042 20.025L11.9985 16.6955L16.9929 20.025C17.1491 20.1288 17.3334 20.1822 17.5209 20.1781C17.7084 20.1739 17.8901 20.1125 18.0416 20.002C18.1932 19.8916 18.3073 19.7373 18.3685 19.5601C18.4298 19.3828 18.4353 19.1911 18.3843 19.0106L16.7067 13.1403L20.8673 9.39612C21.1397 9.15031 21.2397 8.7669 21.1223 8.41927Z" fill="#E77C40"/>
+                          </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                            <path d="M21.1223 8.41927C21.0646 8.24946 20.9585 8.10025 20.817 7.99006C20.6755 7.87987 20.5049 7.81353 20.3261 7.79922L15.097 7.38371L12.8341 2.3747C12.7621 2.21337 12.6449 2.07634 12.4966 1.98016C12.3484 1.88397 12.1755 1.83274 11.9988 1.83264C11.8221 1.83254 11.6492 1.88359 11.5009 1.97961C11.3525 2.07563 11.2352 2.21253 11.1629 2.37378L8.90012 7.38371L3.67097 7.79922C3.49528 7.81314 3.32732 7.87738 3.18718 7.98425C3.04704 8.09113 2.94066 8.23612 2.88077 8.40187C2.82087 8.56762 2.81 8.74712 2.84944 8.91889C2.88889 9.09066 2.97699 9.24743 3.1032 9.37044L6.96751 13.1375L5.60083 19.0555C5.55933 19.2347 5.57263 19.4221 5.639 19.5936C5.70538 19.7651 5.82176 19.9127 5.97304 20.0172C6.12433 20.1217 6.30354 20.1783 6.48741 20.1797C6.67129 20.1811 6.85134 20.1272 7.0042 20.025L11.9985 16.6955L16.9929 20.025C17.1491 20.1288 17.3334 20.1822 17.5209 20.1781C17.7084 20.1739 17.8901 20.1125 18.0416 20.002C18.1932 19.8916 18.3073 19.7373 18.3685 19.5601C18.4298 19.3828 18.4353 19.1911 18.3843 19.0106L16.7067 13.1403L20.8673 9.39612C21.1397 9.15031 21.2397 8.7669 21.1223 8.41927Z" fill="#E77C40"/>
+                          </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                            <path d="M21.1223 8.41927C21.0646 8.24946 20.9585 8.10025 20.817 7.99006C20.6755 7.87987 20.5049 7.81353 20.3261 7.79922L15.097 7.38371L12.8341 2.3747C12.7621 2.21337 12.6449 2.07634 12.4966 1.98016C12.3484 1.88397 12.1755 1.83274 11.9988 1.83264C11.8221 1.83254 11.6492 1.88359 11.5009 1.97961C11.3525 2.07563 11.2352 2.21253 11.1629 2.37378L8.90012 7.38371L3.67097 7.79922C3.49528 7.81314 3.32732 7.87738 3.18718 7.98425C3.04704 8.09113 2.94066 8.23612 2.88077 8.40187C2.82087 8.56762 2.81 8.74712 2.84944 8.91889C2.88889 9.09066 2.97699 9.24743 3.1032 9.37044L6.96751 13.1375L5.60083 19.0555C5.55933 19.2347 5.57263 19.4221 5.639 19.5936C5.70538 19.7651 5.82176 19.9127 5.97304 20.0172C6.12433 20.1217 6.30354 20.1783 6.48741 20.1797C6.67129 20.1811 6.85134 20.1272 7.0042 20.025L11.9985 16.6955L16.9929 20.025C17.1491 20.1288 17.3334 20.1822 17.5209 20.1781C17.7084 20.1739 17.8901 20.1125 18.0416 20.002C18.1932 19.8916 18.3073 19.7373 18.3685 19.5601C18.4298 19.3828 18.4353 19.1911 18.3843 19.0106L16.7067 13.1403L20.8673 9.39612C21.1397 9.15031 21.2397 8.7669 21.1223 8.41927Z" fill="#E77C40"/>
+                          </svg> 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                            <path d="M5.99772 13.1376L4.63104 19.0556C4.58872 19.2348 4.60143 19.4226 4.6675 19.5945C4.73357 19.7663 4.84993 19.9143 5.00139 20.019C5.15286 20.1237 5.33237 20.1803 5.5165 20.1814C5.70062 20.1825 5.8808 20.128 6.03349 20.0251L11.0278 16.6956L16.0222 20.0251C16.1784 20.1289 16.3627 20.1823 16.5502 20.1781C16.7377 20.174 16.9194 20.1126 17.0709 20.0021C17.2225 19.8916 17.3365 19.7374 17.3978 19.5602C17.4591 19.3829 17.4646 19.1911 17.4136 19.0107L15.736 13.1404L19.8966 9.39622C20.0298 9.27623 20.125 9.11982 20.1703 8.94632C20.2156 8.77283 20.209 8.58986 20.1515 8.42004C20.0939 8.25023 19.9878 8.10101 19.8463 7.99085C19.7048 7.88069 19.5342 7.81442 19.3554 7.80023L14.1263 7.3838L11.8634 2.37479C11.7913 2.2135 11.674 2.07654 11.5257 1.98043C11.3774 1.88433 11.2045 1.83319 11.0278 1.83319C10.8511 1.83319 10.6782 1.88433 10.53 1.98043C10.3817 2.07654 10.2644 2.2135 10.1922 2.37479L7.92942 7.3838L2.70027 7.79931C2.52457 7.81323 2.35661 7.87747 2.21647 7.98434C2.07634 8.09122 1.96996 8.23621 1.91006 8.40196C1.85017 8.56771 1.83929 8.74721 1.87874 8.91898C1.91819 9.09075 2.00629 9.24752 2.1325 9.37053L5.99772 13.1376ZM8.61459 9.16966C8.77831 9.15676 8.93555 9.10005 9.06982 9.00549C9.20409 8.91092 9.31044 8.78197 9.37773 8.63216L11.0278 4.98065L12.6779 8.63216C12.7452 8.78197 12.8516 8.91092 12.9859 9.00549C13.1201 9.10005 13.2774 9.15676 13.4411 9.16966L17.0843 9.45859L14.0841 12.1589C13.8236 12.3937 13.7199 12.7551 13.8153 13.0927L14.9646 17.1147L11.5378 14.8299C11.3874 14.729 11.2104 14.6751 11.0292 14.6751C10.8481 14.6751 10.671 14.729 10.5206 14.8299L6.93972 17.2175L7.90282 13.0477C7.93813 12.8944 7.93339 12.7345 7.88906 12.5835C7.84472 12.4325 7.76228 12.2954 7.64966 12.1855L4.8631 9.46868L8.61459 9.16966Z" fill="#E77C40"/>
+                          </svg>
+                      </div>
+                    </div>
+                    <p class="text-[#23A6F0]">Regina Miles</p>
+                    <p class="text-[#252B42] font-semibold">Banker</p>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section  -->
+        <section>
+            <h1 class="font-semibold text-5xl py-20 text-center">Frequently Asked <span class="text-[#E76F51]">Questions</span></h1>
+            <div class="hero min-h-screen bg-base-200">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img class="w-[100%]" src="/images/others/faq.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" checked="checked" /> 
+                        <div class="collapse-title text-xl font-medium">
+                          <Translate text="Click to open this one and close others" />
+                          What are the most important things I should know about riding a bike?
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" /> 
+                        <div class="collapse-title text-xl font-medium">
+                          <Translate text="Click to open this one and close others" />
+                          How can I tell if my helmet is old and I need a new one?
+                        </div>
+                        <div class="collapse-content"> 
+                            <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" /> 
+                        <div class="collapse-title text-xl font-medium">
+                          <Translate text="Click to open this one and close others" />
+                          My bike has been in storage is it safe to ride?
+                        </div>
+                        <div class="collapse-content"> 
+                            <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+        <div>
+          <div class="flex gap-5">
+            <p>Download Now</p>
+             <p>License</p>
+          </div>
+          <ul class="grid gap-10 lg:grid-cols-6 grid-cols-3">
+            <li><a href="">About</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Privacy</a></li>
+          </ul>
+        </div> 
+        <div>
+          <span class="footer-title">Get The App</span> 
+          <img src="./images/others/android.png" alt="">
+          <img src="./images/others/ios.png" alt="">
+        </div>
+      </footer>
+  </body>
 </html>
